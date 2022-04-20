@@ -1,0 +1,51 @@
+.header__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.header__form {
+    width: 400px;
+}
+
+.header__label {
+    display: flex;
+    position: relative;
+    height: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #F2F2F2;
+}
+
+.header__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .325rem;
+    width: 60px;
+    position: relative;
+    padding-left: .825rem;
+}
+
+.header__icon > .bi{
+    font-size: 1.5rem;
+    color: var(--orange);
+}
+
+.header__search {
+    display: block;
+    width: 100%;
+    padding: .325rem 0;
+    outline: none;
+    border: none; 
+    background-color: transparent;
+}
+
+.header__btn-search {
+    font-weight: 700;
+    font-size: 1rem;
+    padding-right: .625rem;
+    width: 60px;
+    border: none;
+    background-color: var(--orange);
+    cursor: pointer;
+}
