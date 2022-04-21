@@ -7,10 +7,12 @@
     padding-left: 1rem;
     color: #F2F2F2;
     cursor: pointer;
+    transition: var(--transition);
 }
 
 .header__login:hover {
     color: var(--orange);
+    transition: var(--transition);
 }
 
 .header__profile {

@@ -7,4 +7,5 @@
     --dark: #161616;
 
     --font-f: 'Roboto', sans-serif;
+    --transition: all .2s ease-in-out;
 }

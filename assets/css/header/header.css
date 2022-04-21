@@ -1,10 +1,12 @@
 @import url(header__container.css);
 @import url(header__wrapper.css);
 @import url(header__login.css);
+@import url(header__menu.css);
 
 .header {
     position: relative;
     width: 100%;
     height: 70px;
     background-color: var(--gray-light);
+    box-shadow: 0 0px 10px 5px rgb(0, 0, 0, .4);
 }
