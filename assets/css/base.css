@@ -1,4 +1,5 @@
 @import url(header/header.css);
+@import url(footer/footer.css);
 @import url(variables.css);
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
@@ -13,6 +14,7 @@ body {
 }
 
 .link__default {
+    padding: .2rem 0;
     color: var(--orange);
 }
 
@@ -20,3 +22,31 @@ body {
     text-decoration: underline;
 }
 
+.btn-share {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1877f2;
+    width: 100px;
+    padding: .2rem;
+    align-items: center;
+    margin-left: auto;
+    font-size: .7rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: .325rem;
+}
+
+.more {
+    margin-top: .625rem;
+    margin-left: auto;
+    font-size: .8rem;
+    grid-column: span 2;
+}
+
+.btn-closed {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}

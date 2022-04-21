@@ -1,0 +1,15 @@
+.p-footer__midia {
+    padding: .8rem;
+}
+
+.p-footer__midia > .fa-brands {
+    font-size: 1.6rem;
+    padding: .4rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.p-footer__midia > .fa-brands:hover {
+    color: var(--orange);
+    transition: var(--transition);
+}

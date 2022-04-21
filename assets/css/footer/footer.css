@@ -1,0 +1,14 @@
+@import url(footer__midia.css);
+@import url(footer__wrapper.css);
+@import url(footer__about.css);
+@import url(footer__title-wrapper.css);
+@import url(footer__services.css);
+@import url(footer__list-services.css);
+@import url(footer__copyright.css);
+
+.p-footer__container {
+    position: relative;
+    height: auto;
+    color: #F2F2F2;
+    background: var(--gray-light) url(/assets/images/background-footer.svg) no-repeat center / cover ;
+}

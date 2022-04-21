@@ -1,0 +1,15 @@
+.p-footer__list-services {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: .8rem;
+    max-height: 150px;
+}
+
+.p-footer__link {
+    color: #F2F2F2;
+}
+
+.p-footer__link:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,4 @@
+.p-footer__services {
+    grid-column: 2/4;
+    max-width: 380px;
+}

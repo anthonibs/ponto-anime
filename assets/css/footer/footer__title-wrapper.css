@@ -1,0 +1,16 @@
+.p-footer__title-wrapper {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding-left: .325em;
+    margin-bottom: .8rem;
+    border-bottom: 2px solid var(--orange);
+}
+
+.p-footer__title-wrapper > .bi {
+    color: var(--orange);
+}
+
+.p-footer__title {
+    padding-bottom: .325rem;
+}

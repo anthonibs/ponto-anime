@@ -1,0 +1,7 @@
+.p-footer__wrapper {
+    display: grid;
+    justify-content: space-evenly;
+    padding: 1rem 0 2rem;
+    grid-template-columns: 350px 1fr 1fr;
+    gap: 2rem;
+}
