@@ -1,0 +1,30 @@
+.header__form-login {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.header__modal-input {
+    height: 30px;
+    padding: .325rem;
+    margin-top: .2rem;
+    border: 2px solid transparent;
+    outline: none;
+    font-size: 1rem;
+    border-radius: .2rem;
+    background-color: #f2f2f2;
+    color: var(--orange);
+}
+
+.header__modal-label {
+    display: flex;
+    max-width: 40%;
+    padding: .625rem 0 ;
+    align-items: center;
+    color: #F2F2F2;
+}
+
+.header__modal-remember {
+    font-size: .8rem;
+    margin-left: .6rem;
+}

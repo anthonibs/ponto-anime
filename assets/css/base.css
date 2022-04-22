@@ -49,4 +49,32 @@ body {
     right: 10px;
     top: 10px;
     cursor: pointer;
+    border: none;
+    padding: .325rem;
+    background-color: transparent; 
+}
+
+.btn-closed .fa-solid {
+    font-size: 1.5rem;
+    color: var(--orange);
+    transition: var(--transition);
+}
+
+.btn-closed .fa-solid:hover {
+    color: #cf6610;
+    transition: var(--transition);
+}
+
+.p-title {
+    padding-top: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 900;
+    border-bottom: 1px solid #fc8524bb;
+    padding-bottom: .2rem;
+    color: var(--orange);
+}
+
+.p-title--modify {
+    padding-top: 1rem;
+    font-size: 1.2rem;
 }

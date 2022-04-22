@@ -1,0 +1,5 @@
+.main-home__lastet-news {
+    grid-column: span 2;
+    display: grid;
+    gap: 10px;
+}

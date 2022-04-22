@@ -1,0 +1,48 @@
+.header__modal-register {
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+}
+
+.btn__log {
+    background-color: var(--orange);
+    color: var(--dark);
+    font-weight: 700;
+    padding: .325rem;
+    font-size: 1rem;
+    height: 35px;
+    border: none;
+    display: block;
+    cursor: pointer;
+    border-radius: .325rem;
+    transition: var(--transition);
+}
+
+.btn__log:hover {
+    background-color: #cf6610;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+}
+
+.header__modal-btn {
+    background-color: var(--gray-light);
+    color: #f2f2f2;
+    margin: .2rem 0;
+    padding: .625rem;
+    font-size: 1rem;
+    border-radius: .325rem;
+    transition: var(--transition);
+}
+
+.header__modal-btn:hover {
+    background-color: #35333a;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+}
+
+.header__modal-btn--modify,
+.header__modal-btn--modify:hover {
+    background-color: transparent;
+    color: var(--orange);
+    box-shadow: none;
+}

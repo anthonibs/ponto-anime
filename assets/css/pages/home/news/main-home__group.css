@@ -1,0 +1,6 @@
+.main-home__group {
+    display: grid;
+    grid-column: span 2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 350px auto;
+}

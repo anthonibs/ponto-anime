@@ -1,0 +1,13 @@
+@import url(/assets/css/pages/home/news/main-home__card-news.css);
+@import url(/assets/css/pages/home/news/main-home__group.css);
+@import url(/assets/css/pages/home/news/main-home__carousel.css);
+@import url(/assets/css/pages/home/news/main-home__latest-news.css);
+@import url(main-home__card-news.css);
+@import url(main-home__container.css);
+
+.main-home {
+    background-color: #bbbbbb;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}

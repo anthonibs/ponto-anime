@@ -2,6 +2,10 @@
 @import url(header__wrapper.css);
 @import url(header__login.css);
 @import url(header__menu.css);
+@import url(header__modal-login.css);
+@import url(header__form-login.css);
+@import url(header__modal-register.css);
+
 
 .header {
     position: relative;
