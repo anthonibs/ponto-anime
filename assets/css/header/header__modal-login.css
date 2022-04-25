@@ -11,6 +11,7 @@
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     padding: 30px 40px;
     border-radius: .2rem;
+    /* visibility: hidden; */
 }
 
 .header__modal-title {

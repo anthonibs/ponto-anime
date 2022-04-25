@@ -32,7 +32,7 @@
 
 /* SUBMENU */
 .header__sublist {
-    display: flex;
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 70px;
@@ -51,6 +51,7 @@
 
 .header__items:hover .header__sublist {
     visibility: visible;
+    display: flex;
     transition: var(--transition);
 }
 
