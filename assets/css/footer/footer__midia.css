@@ -1,10 +1,13 @@
 .p-footer__midia {
+    display: flex;
+    align-items: center;
     padding: .8rem;
+    gap: .5rem;
 }
 
 .p-footer__midia > .fa-brands {
     font-size: 1.6rem;
-    padding: .4rem;
+    padding: .5rem;
     cursor: pointer;
     transition: var(--transition);
 }

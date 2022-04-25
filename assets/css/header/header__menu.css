@@ -1,22 +1,27 @@
 .header__list {
     display: flex;
+    align-items: center;
     gap: 10px;
 }
 
 .header__items {
-    display: block;
     padding: .325rem;
     cursor: pointer;
+    height: 70px;
 }
 
 .header__link {
+    display: flex;
     font-size: 1rem;
     color: #f2f2f2;  
+    height: 100%;
+    align-items: center;
     transition: var(--transition);
 }
 
 .header__link > .bi {
-    font-size: .8rem;
+    font-size: .7rem;
+    margin-left: 0.2rem;
 }
 
 .header__link:hover {
@@ -24,8 +29,10 @@
     transition: var(--transition);
 }
 
+
+/* SUBMENU */
 .header__sublist {
-    display: none;
+    display: flex;
     flex-direction: column;
     position: absolute;
     top: 70px;
@@ -37,25 +44,31 @@
     max-height: 300px;
     flex-wrap: wrap;
     box-shadow: 0 5px 15px 0px rgb(0, 0, 0, .8);
+    visibility: hidden;
+    transition: var(--transition);
+    z-index: 1;
+}
+
+.header__items:hover .header__sublist {
+    visibility: visible;
+    transition: var(--transition);
 }
 
 .header__items-gender {
-    font-size: .9rem;
+    font-size: 1rem;
     padding: .325rem;
 }
 
 .header__link-gender {
     color: #f2f2f2;
-    transition: var(--transition);
 }
 
 .header__link-gender:hover {
     color: var(--orange);
-    transition: var(--transition);
 }
 
 .header__link-gender > .bi {
-    font-size: .8rem;
+    font-size: .7rem;
     vertical-align: middle;
     margin-right: .325rem;
 }
