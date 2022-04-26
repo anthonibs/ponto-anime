@@ -10,5 +10,5 @@
     position: relative;
     height: auto;
     color: #F2F2F2;
-    background: var(--gray-light) url(/assets/images/background-footer.svg) no-repeat center / cover ;
+    background: var(--gray-light) url(/assets/images/background-footer.svg) no-repeat top / cover ;
 }
