@@ -4,8 +4,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
 
+*::selection {
+    color: #f2f2f2;
+    background-color: #ff8b2cc4;
+}
+
 body {
     font-family: var(--font-f);
+}
+
+
+.main {
+    background-color: #bbbbbb;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .container {
@@ -31,6 +44,32 @@ body {
     background-color: rgb(35, 35, 35, .6);
     z-index: 10;
     cursor: pointer;
+}
+
+.btn__default {
+    background-color: var(--orange);
+    color: var(--dark);
+    font-weight: 700;
+    padding: .325rem;
+    font-size: 1rem;
+    height: 35px;
+    border: none;
+    display: block;
+    cursor: pointer;
+    border-radius: .325rem;
+    transition: var(--transition);
+}
+
+.btn__default:hover {
+    background-color: #cf6610;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+}
+
+.btn__default--modify {
+    margin-top: 1rem;
+    grid-column: span 2;
+    height: 60px;
 }
 
 .btn-share {
@@ -62,7 +101,7 @@ body {
     cursor: pointer;
     border: none;
     padding: .325rem;
-    background-color: transparent; 
+    background-color: transparent;
 }
 
 .btn-closed .fa-solid {
@@ -88,4 +127,32 @@ body {
 .p-title--modify {
     padding-top: 1rem;
     font-size: 1.2rem;
+}
+
+.error-message__inpunt {
+    display: none;
+    margin-top: .2rem;
+    font-size: .8rem;
+    color: red;
+}
+
+.error-message .error-message__inpunt {
+    display: block;
+}
+
+
+
+/* Styling Scrollbars in Chrome, Edge and Safari */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgb(145, 145, 145);
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #ddd;
+    border-radius: 20px;
 }

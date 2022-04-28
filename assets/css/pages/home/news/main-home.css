@@ -5,9 +5,3 @@
 @import url(main-home__card-news.css);
 @import url(main-home__container.css);
 
-.main-home {
-    background-color: #bbbbbb;
-    width: 100%;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}

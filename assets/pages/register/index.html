@@ -18,6 +18,7 @@
 
     <!-- STYLES CSS -->
     <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/pages/register/main-register.css">
 
     <title>Pontoanimes | Registre-se Gratuitamente</title>
 
@@ -26,47 +27,70 @@
 <body>
     <header class="header">
         <div class="header__container container">
-            <a href="/index.html"><img class="header__logo" src="/assets/images/logo-ponto-anime-01.svg" alt="Logo Pontoanimes"></a>
+            <a href="/index.html"><img class="header__logo" src="/assets/images/logo-ponto-anime-01.svg"
+                    alt="Logo Pontoanimes"></a>
         </div>
     </header>
 
-    <main class="">
+    <main class="main">
+        <div class="main-register container">
+            <section class="main-register__register">
+                <header class="main-register__header">
+                    <h1 class="main-register__title">Registre-se Gratuitamente</h1>
+                    <span class="main-register__subtitle">Venha para a Crunchyroll! Basta um único clique!</span>
+                </header>
 
-        <form action="">
-            <fieldset>
-                <div>
-                    <label for="">Endereço de E-mail</label>
-                    <input type="text" required>
-                </div>
-                
-                <div>
-                    <label for="">Nome de Usuário</label>
-                    <input type="text" required>
-                </div>
-                
-                <div>
-                    <label for="">Senha</label>
-                    <input type="password" required>
-                </div>
-                
-                <div>
-                    <label for="">Data de Nascimento</label>
-                    <input type="date" required>
-                </div>
-                
-                <div>
-                    <label for="gender">Sexo</label>
-                    <select name="" id="gender" required>
-                        <option value="" selected disabled>Opção</option>
-                        <option value="Masculino">Masculino</option>
-                        <option value="Feminino">Feminino</option>
-                        <option value="Não-binário">Não-binário</option>
-                        <option value="Transgênero">Transgênero</option>
-                    </select>
-                </div>
-            </fieldset>
-        </form>
+                <form action="" method="" class="main-register__form">
+                    <fieldset class="main-register__form-items">
+                        <div class="main-register__form-item">
+                            <label for="email" class="main-register__form-label">Endereço de E-mail</label>
+                            <input type="email" id="email" class="main-register__form-input" data-type="email" >
+                            <span class="error-message__inpunt">Este campo não está válido</span>
+                        </div>
 
+                        <div class="main-register__form-item">
+                            <label for="name" class="main-register__form-label">Nome de Usuário</label>
+                            <input type="text" id="name" class="main-register__form-input" data-type="name" >
+                            <span class="error-message__inpunt">Este campo não está válido</span>
+                        </div>
+
+                        <div class="main-register__form-item">
+                            <label for="password" class="main-register__form-label">Senha</label>
+                            <input type="password" id="password" class="main-register__form-input" data-type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" >
+                            <span class="error-message__inpunt">Este campo não está válido</span>
+                        </div>
+
+                        <div class="main-register__form-item">
+                            <label for="date-birth" class="main-register__form-label">Data de Nascimento</label>
+                            <input type="date" id="date-birth" class="main-register__form-input" data-type="dataNascimento" required>
+                            <span class="error-message__inpunt">Este campo não está válido</span>
+                        </div>
+
+                        <div class="main-register__form-item">
+                            <label for="gender" class="main-register__form-label">Sexo</label>
+                            <select name="" id="gender" class="main-register__form-select" data-type="gender" required>
+                                <option value selected="Opção" disabled class="main-register__form-option">Opção</option>
+                                <option value="Masculino" class="main-register__form-option">Masculino</option>
+                                <option value="Feminino" class="main-register__form-option">Feminino</option>
+                                <option value="Não-binário" class="main-register__form-option">Não-binário</option>
+                                <option value="Transgênero" class="main-register__form-option">Transgênero</option>
+                            </select>
+                            <span class="error-message__inpunt">Este campo não está válido</span>
+                        </div>
+
+                        <button type="submit" id="btn-createAccount" class="btn__default btn__default--modify">Criar Conta</button>
+                    </fieldset>
+                </form>
+
+                <span class="main-register__info">Ao criar uma conta, você declara que possui mais de 16 anos de idade e está de acordo com os <a
+                        href="#" class="link__default">Termos de Serviço</a> &amp; <a href="#" class="link__default">Política de Privacidade</a>.</span>
+            </section>
+        
+            <aside class="main-register__aside">
+                <div class="main-register__line-anime"></div>
+                <div class="main-register__background-anime"></div>
+            </aside>
+        </div>
     </main>
 
     <footer class="p-footer__container">
@@ -118,6 +142,7 @@
                     Privacidade</a></p>
         </div>
     </footer>
-</body>
 
+    <script src="/assets/js/app.js" type="module"></script>
+</body>
 </html>
