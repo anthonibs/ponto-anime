@@ -3,14 +3,14 @@
 }
 
 .main-register__title {
+    color: var(--orange);
     font-size: 1.8rem;
     font-weight: 600;
-    color: var(--orange);
     margin-bottom: .625rem;
 }
 
 .main-register__subtitle {
+    color: var(--gray-light);
     font-size: 1rem;
     font-weight: 300;
-    color: var(--gray-light);
 }

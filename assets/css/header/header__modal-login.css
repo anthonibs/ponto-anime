@@ -1,25 +1,21 @@
 .header__modal-login {
-    display: none;
-    position: fixed;
-    top: 90px;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    height: auto;
-    width: 420px;
+    background: url(/assets/images/bg-log-my-hero-academia-03.png) no-repeat right / 60%;
     background-color: rgb(63, 60, 69, .95);
-    z-index: 100;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-    padding: 30px 40px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
     border-radius: .2rem;
-    
-    background-image: url(/assets/images/bg-log-my-hero-academia-03.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 60%;
+    display: none;
+    height: auto;
+    margin-left: 50%;
+    position: fixed;
+    padding: 30px 40px;
+    transform: translateX(-50%);
+    top: 90px;
+    width: 420px;
+    z-index: 100;
 }
 
 .header__modal-title {
-    font-size: 1.2rem;
     color: #F2F2F2;
+    font-size: 1.2rem;
     text-align: center;
 }

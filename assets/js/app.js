@@ -10,7 +10,6 @@ inputs.forEach(input => {
         const monitoramento = event.target
         valida(monitoramento)
 
-        // console.log("Eu estou monitorando esse input: ", monitoramento)
-
     })
 })
+

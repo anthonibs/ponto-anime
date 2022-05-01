@@ -1,12 +1,12 @@
 .header__container {
-    display: flex;
     align-items: center;
-    height: 100%;
+    display: flex;
     justify-content: space-between;
+    height: 100%;
 }
 
 .header__logo {
     height: 50px;
-    width: auto;
     padding: .325rem;
+    width: auto;
 }

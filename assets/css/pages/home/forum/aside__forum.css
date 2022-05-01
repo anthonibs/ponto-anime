@@ -6,7 +6,7 @@
 @import url(aside__card-views.css);
 
 .aside__forum{
-    grid-column: 3;
     border-left: 1px solid #fc85248f;
+    grid-column: 3;
     padding-left: 1.6rem;
 }

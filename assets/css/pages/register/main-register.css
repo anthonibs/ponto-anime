@@ -5,11 +5,11 @@
 @import url(main-register__info.css);
 
 .main-register {
+    background-color: #F2F2F2;
+    box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.20);
+    border-radius: .225rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: #F2F2F2;
     gap: 1rem;
     padding: 2rem;
-    border-radius: .225rem;
-    box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.20);
 }

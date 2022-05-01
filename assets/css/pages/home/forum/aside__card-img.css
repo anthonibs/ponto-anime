@@ -1,9 +1,9 @@
 .aside__card-img {
     display: block;
+    height: 100%;
     grid-column: span 1;
     grid-row: span 1;
-    height: 100%;
-    width: 100%;
     object-fit: cover;
     object-position: center;
+    width: 100%;
 }

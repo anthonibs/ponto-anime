@@ -1,6 +1,6 @@
 .header__wrapper {
-    display: flex;
     align-items: center;
+    display: flex;
 }
 
 .header__form {
@@ -8,48 +8,48 @@
 }
 
 .header__label {
-    display: flex;
-    position: relative;
-    height: 40px;
+    background-color: #F2F2F2;
     border-radius: 20px;
+    display: flex;
+    height: 40px;
+    position: relative;
     overflow: hidden;
     outline: 0;
-    background-color: #F2F2F2;
 }
 
 .header__icon {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
-    padding: .325rem;
-    width: 60px;
     position: relative;
+    padding: .325rem;
     padding-left: .825rem;
+    width: 60px;
 }
 
 .header__icon > .bi{
-    font-size: 1.5rem;
     color: var(--orange);
+    font-size: 1.5rem;
 }
 
 .header__search {
+    background-color: transparent;
+    border: none; 
     display: block;
-    width: 100%;
     padding: .325rem 0;
     outline: none;
-    border: none; 
-    background-color: transparent;
+    width: 100%;
 }
 
 .header__btn-search {
+    border: none;
+    border-radius: 0 20px 20px 0;
+    background-color: var(--orange);
+    cursor: pointer;
     font-weight: 700;
     font-size: 1rem;
     padding-right: .625rem;
     width: 60px;
-    border: none;
-    background-color: var(--orange);
-    cursor: pointer;
-    border-radius: 0 20px 20px 0;
 }
 
 .header__btn-search:hover {

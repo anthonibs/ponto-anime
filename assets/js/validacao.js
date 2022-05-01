@@ -12,7 +12,7 @@ export function valida(input) {
         input.parentElement.classList.add('error-message')
         input.parentElement.querySelector('.error-message__inpunt').innerHTML = mostraMensagemDeErro(typeInput, input)
     }
-
+    
 }
 
 const typeError = [
@@ -34,7 +34,7 @@ const errorMessages = {
         valueMissing: 'O campo de senha não pode estar vazio.',
         patternMismatch: 'A senha deve conter 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula e uma minuscula e não deve conter símbolos.'
     },
-    dataNascimento: {
+    dateBirth: {
         valueMissing: 'O campo de data de nascimento não pode estar vazio.',
         customError: 'Você deve ser maior que 18 anos para se cadastrar.'
     },
@@ -44,13 +44,14 @@ const errorMessages = {
 }
 
 const validadores = {
-    dataNascimento: input => validaDataNascimento(input)
+    dateBirth: input => validaDataNascimento(input),
 }
 
-console.log(validadores)
+
 
 function mostraMensagemDeErro(tipoDeInput, input) {
     let mensagem = ''
+    
     typeError.forEach(erro => {
         if (input.validity[erro]) {
             mensagem = errorMessages[tipoDeInput][erro]
@@ -65,7 +66,7 @@ function validaDataNascimento(input) {
     const dataRecebida = new Date(input.value)
     let mensagem = ''
 
-    if (!maiorQue18(dataRecebida)) {
+    if (!maiorQue16(dataRecebida)) {
         mensagem = 'Você deve ser maior que 18 anos para se cadastrar.'
     }
 
@@ -73,10 +74,10 @@ function validaDataNascimento(input) {
 }
 
 
-// confere se a pessoa cadastrando tem a idade maior que 18 anos
-function maiorQue18(data) {
+// confere se a pessoa cadastrando tem a idade maior que 16 anos
+function maiorQue16(data) {
     const dataAtual = new Date()
-    const dataMais18 = new Date(data.getUTCFullYear() + 18, data.getUTCMonth(), data.getUTCDate())
+    const dataMais16 = new Date(data.getUTCFullYear() + 16, data.getUTCMonth(), data.getUTCDate())
 
-    return dataMais18 <= dataAtual
+    return dataMais16 <= dataAtual
 }

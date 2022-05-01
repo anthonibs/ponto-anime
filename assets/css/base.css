@@ -5,8 +5,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
 
 *::selection {
-    color: #f2f2f2;
     background-color: #ff8b2cc4;
+    color: #f2f2f2;
+}
+
+/* STYLING SCROLLBARS IN CHROME, EDGE AND SAFARI */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgb(145, 145, 145);
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #ddd;
+    border-radius: 20px;
 }
 
 body {
@@ -16,9 +31,9 @@ body {
 
 .main {
     background-color: #bbbbbb;
-    width: 100%;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    width: 100%;
 }
 
 .container {
@@ -27,8 +42,8 @@ body {
 }
 
 .link__default {
-    padding: .2rem 0;
     color: var(--orange);
+    padding: .2rem 0;
 }
 
 .link__default:hover {
@@ -36,27 +51,27 @@ body {
 }
 
 .overlay__modal {
+    background-color: rgb(35, 35, 35, .6);
+    cursor: pointer;
     display: none;
+    height: 100%;
     position: fixed;
     top: 0;
     width: 100%;
-    height: 100%;
-    background-color: rgb(35, 35, 35, .6);
     z-index: 10;
-    cursor: pointer;
 }
 
 .btn__default {
     background-color: var(--orange);
+    border: none;
+    border-radius: .325rem;
+    cursor: pointer;
+    display: block;
     color: var(--dark);
     font-weight: 700;
-    padding: .325rem;
     font-size: 1rem;
     height: 35px;
-    border: none;
-    display: block;
-    cursor: pointer;
-    border-radius: .325rem;
+    padding: .325rem;
     transition: var(--transition);
 }
 
@@ -73,40 +88,40 @@ body {
 }
 
 .btn-share {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #1877f2;
-    width: 100px;
-    padding: .2rem;
     align-items: center;
-    margin-left: auto;
-    font-size: .7rem;
+    background-color: #1877f2;
+    border-radius: .325rem;
     border: none;
     color: white;
     cursor: pointer;
-    border-radius: .325rem;
+    display: flex;
+    font-size: .7rem;
+    justify-content: space-evenly;
+    margin-left: auto;
+    padding: .2rem;
+    width: 100px;
 }
 
 .more {
+    font-size: .8rem;
     margin-top: .625rem;
     margin-left: auto;
-    font-size: .8rem;
     grid-column: span 2;
 }
 
 .btn-closed {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
     position: absolute;
+    padding: .325rem;
     right: 10px;
     top: 10px;
-    cursor: pointer;
-    border: none;
-    padding: .325rem;
-    background-color: transparent;
 }
 
 .btn-closed .fa-solid {
-    font-size: 1.5rem;
     color: var(--orange);
+    font-size: 1.5rem;
     transition: var(--transition);
 }
 
@@ -116,43 +131,26 @@ body {
 }
 
 .p-title {
-    padding-top: 1.5rem;
+    border-bottom: 1px solid #fc8524bb;
+    color: var(--orange);
     font-size: 1.6rem;
     font-weight: 900;
-    border-bottom: 1px solid #fc8524bb;
+    padding-top: 1.5rem;
     padding-bottom: .2rem;
-    color: var(--orange);
 }
 
 .p-title--modify {
-    padding-top: 1rem;
     font-size: 1.2rem;
+    padding-top: 1rem;
 }
 
 .error-message__inpunt {
-    display: none;
-    margin-top: .2rem;
-    font-size: .8rem;
     color: red;
+    display: none;
+    font-size: .8rem;
+    margin-top: .2rem;
 }
 
 .error-message .error-message__inpunt {
     display: block;
-}
-
-
-
-/* Styling Scrollbars in Chrome, Edge and Safari */
-body::-webkit-scrollbar {
-    width: 10px;
-}
-
-body::-webkit-scrollbar-thumb {
-    background: rgb(145, 145, 145);
-    border-radius: 20px;
-}
-
-body::-webkit-scrollbar-track {
-    background: #ddd;
-    border-radius: 20px;
 }

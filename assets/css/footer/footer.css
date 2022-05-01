@@ -7,8 +7,8 @@
 @import url(footer__copyright.css);
 
 .p-footer__container {
-    position: relative;
-    height: auto;
-    color: #F2F2F2;
     background: var(--gray-light) url(/assets/images/background-footer.svg) no-repeat top / cover ;
+    color: #F2F2F2;
+    height: auto;
+    position: relative;
 }

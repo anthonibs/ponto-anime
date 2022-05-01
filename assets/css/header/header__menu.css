@@ -1,21 +1,21 @@
 .header__list {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 10px;
 }
 
 .header__items {
-    padding: .325rem;
     cursor: pointer;
+    padding: .325rem;
     height: 70px;
 }
 
 .header__link {
+    align-items: center;
+    color: #f2f2f2;  
     display: flex;
     font-size: 1rem;
-    color: #f2f2f2;  
     height: 100%;
-    align-items: center;
     transition: var(--transition);
 }
 
@@ -32,25 +32,23 @@
 
 /* SUBMENU */
 .header__sublist {
+    background-color: rgb(63, 60, 69, .9);
+    box-shadow: 0 5px 15px 0px rgb(0, 0, 0, .8);
     display: none;
     flex-direction: column;
-    position: absolute;
-    top: 70px;
-    background-color: rgb(63, 60, 69, .9);
-    width: 100%;
+    flex-wrap: wrap;
     gap: .5rem;
-    padding: .8rem;
     max-width: 500px;
     max-height: 300px;
-    flex-wrap: wrap;
-    box-shadow: 0 5px 15px 0px rgb(0, 0, 0, .8);
-    visibility: hidden;
+    padding: .8rem;
+    position: fixed;
+    top: 70px;
     transition: var(--transition);
+    width: 100%;
     z-index: 1;
 }
 
 .header__items:hover .header__sublist {
-    visibility: visible;
     display: flex;
     transition: var(--transition);
 }
@@ -70,6 +68,6 @@
 
 .header__link-gender > .bi {
     font-size: .7rem;
-    vertical-align: middle;
     margin-right: .325rem;
+    vertical-align: middle;
 }
