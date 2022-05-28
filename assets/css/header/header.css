@@ -9,8 +9,12 @@
 
 .header {
     background-color: var(--gray-light);
-    box-shadow: 0 0px 10px 5px rgb(0, 0, 0, .4);
+    box-shadow: 0 0px 10px 1px rgb(0, 0, 0, .2);
     height: 70px;
     position: relative;
     width: 100%;
+}
+
+.header--modify {
+    background-color: #F2F2F2;
 }

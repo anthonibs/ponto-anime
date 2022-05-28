@@ -1,0 +1,9 @@
+.admin-area__header{
+    margin-bottom: 1.3rem;
+}
+
+.admin-area__header > .admin-area__title {
+    color: var(--dark-orange);
+    font-size: 1.5rem;
+    font-weight: 700;
+}

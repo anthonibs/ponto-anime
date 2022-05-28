@@ -1,0 +1,11 @@
+.main--modify {
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 11.25rem);
+    background-color: white;
+}
+
+.admin-area__login {
+    max-width: 500px;
+    margin: 0 auto;
+}
