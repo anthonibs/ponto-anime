@@ -33,34 +33,47 @@
     </header>
 
     <main class="admin-area__login main main--modify">
-        <section class="admin-area__container">
-            <header class="admin-area__header">
-                <h1 class="admin-area__title">Painel de Login</h1>
-            </header>
+        <div class="admin-area__wrap">
+            <aside class="admin-area__aside">
+                <div class="admin-area__bg-image"></div>
+            </aside>
+          
+            <section class="admin-area__container">
+                <header class="admin-area__header">
+                    <h1 class="admin-area__title">Painel de Login</h1>
+                </header>
 
-            <fieldset class="admin-area__wrapper">
-                <form action="" method="post" class="admin-area__form">
+                <fieldset class="admin-area__wrapper">
+                    <form action="" method="post" class="admin-area__form">
+                        <fieldset class="admin-area__group">
+                            <input type="text" name="admin_user" id="admin_user" class="admin-area__input" placeholder="Digite seu usuário" required>
+                            <label for="admin_user" class="admin-area__label">Usuário ou email</label>
+                        </fieldset>
+                        <fieldset class="admin-area__group">
+                            <input type="password" name="admin_password" id="admin_password" class="admin-area__input" placeholder="Digite sua senha" required>
+                            <label for="admin_password" class="admin-area__label">Senha</label>
+                            <span class="admin-area__icon">
+                                <i class="bi bi-eye-slash-fill"></i>
+                            </span>
+                        </fieldset>
+
+                        <fieldset class="admin-area__group admin-area__group--modify">
+                            <div class="label-wrapper">
+                                <input type="checkbox" id="remember" name="admin_remember" class="largerCheckbox" checked>
+                                <label for="remember">Lembrar-me</label>
+                            </div>
+                            <button type="submit" class="btn__default btn__access">Acessar</button>
+                        </fieldset>
+                    </form>
+
                     <fieldset class="admin-area__group">
-                        <input type="text" name="admin_user" id="admin_user" class="admin-area__input" placeholder="Digite seu usuário">
-                        <label for="admin_user" class="admin-area__label">Usuário</label>
+                        <a href="#" class="admin-area__forgotit">
+                            <p>Esqueceu sua senha?</p>
+                        </a>
                     </fieldset>
-
-                    <fieldset class="admin-area__group">
-                        <input type="password" name="admin_password" id="admin_password" class="admin-area__input" placeholder="Digite sua senha">
-                        <label for="admin_password" class="admin-area__label">Senha</label>
-                        <span class="admin-area__icon"><i class="bi bi-eye-slash-fill"></i></span>
-                    </fieldset>
-
-                    <button type="button" class="btn__default btn__login">Entrar</button>
-                </form>
-
-                <fieldset class="admin-area__group">
-                    <a href="#" class="admin-area__forgotit">
-                        <p>Esqueceu sua senha?</p>
-                    </a>
                 </fieldset>
-            </fieldset>
-        </section>
+            </section>
+        </div>        
     </main>
 
     <footer class="p-footer__container p-footer__container--modify">
@@ -69,6 +82,6 @@
         </div>
     </footer>
 
-    <script src="/assets/js/app.js" type="module"></script>
+    <script src="/assets/js/showPassword.js"></script>
 </body>
 </html>

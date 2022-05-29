@@ -1,17 +1,37 @@
-.admin-area__wrapper {
-    max-width: 250px;
-}
-
-.admin-area__group{
-    position: relative;
+.admin-area__group {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
     min-width: 170px;
     margin-bottom: 1rem;
+    position: relative;
+    width: 100%;
 }
 
+.admin-area__wrapper > .admin-area__group:nth-child(2) {
+    margin-bottom: 0;
+}
 
+.admin-area__group--modify {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
+.label-wrapper {
+    display: flex;
+    align-items: center;
+    grid-column: span 2;
+}
 
+input.largerCheckbox {
+    min-height: 20px;
+    margin-right: 0.5rem;
+    min-width: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .label-wrapper {
+        margin-bottom: .325rem;
+    }
+}

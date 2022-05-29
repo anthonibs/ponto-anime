@@ -1,3 +1,4 @@
+// HOME PAGE IMAGES CAROUSEL
 var simpleCarousel = document.querySelector(".js-carousel--simple");
 
 new Glider(simpleCarousel, {

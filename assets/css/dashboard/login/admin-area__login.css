@@ -1,11 +1,15 @@
 .main--modify {
-    display: flex;
-    justify-content: center;
-    height: calc(100vh - 11.25rem);
     background-color: white;
+    height: calc(100vh - 11.25rem);
 }
 
-.admin-area__login {
-    max-width: 500px;
-    margin: 0 auto;
+.admin-area__wrap {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    max-width: 776px;
+    max-height: 100%;
+    margin: 3rem auto 0;
+    padding: 0 2rem;
 }

@@ -1,23 +1,33 @@
 .admin-area__container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 1.5rem;
+    margin: 2.5rem 0;
+    padding-left: 3rem;
+    width: 100%;
 }
 
-.btn__login {
-    width: 100%;
-    margin-bottom: 1rem;
+/* ACCESS BUTTON IN ADMINISTRATION AREA */
+.btn__access {
     background-color: var(--dark-orange);
+    margin-left: auto;
+    padding: .6rem;
+    grid-column: 3;
+    width: 100%;
 }
 
 .admin-area__forgotit {
-    text-align: center;
-    padding: 0.325rem;
-    font-weight: 700;
     color: var(--dark-orange);
+    font-weight: 700;
+    padding: 0.325rem;
+    text-align: left;
 }
 
 .admin-area__forgotit:hover {
     color: #cf6610;
+}
+
+@media screen and (max-width: 600px) {
+    .btn__access {
+        grid-column: span 2;
+    }
 }

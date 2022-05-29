@@ -1,15 +1,15 @@
 .admin-area__label {
-    position: absolute;
+    color: var(--gray-dark);
     font-size: 1rem;
     left: 0.5rem;
+    position: absolute;
     top: .9rem;
-    transition: all .325s;
-    color: var(--gray-dark);
+    transition: var(--transition);
 }
 
 .admin-area__input:not(:placeholder-shown) + .admin-area__label, .admin-area__input:focus + .admin-area__label {
+    color: var(--gray-light);
     font-size: 0.8rem;
     top: 0.25rem;
-    transition: all .325s;
-    color: var(--gray-light);
+    transition: var(--transition);
 }

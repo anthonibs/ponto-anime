@@ -11,3 +11,11 @@
     width: auto;
 }
 
+@media screen and (max-width: 600px) {
+    .header__container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+}

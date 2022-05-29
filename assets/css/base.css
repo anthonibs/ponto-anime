@@ -24,10 +24,10 @@ body::-webkit-scrollbar-track {
     border-radius: 20px;
 }
 
+
 body {
     font-family: var(--font-f);
 }
-
 
 .main {
     background-color: #bbbbbb;
@@ -66,8 +66,8 @@ body {
     border: none;
     border-radius: .325rem;
     cursor: pointer;
-    display: block;
     color: var(--dark);
+    display: block;
     font-weight: 700;
     font-size: 1rem;
     height: 35px;
@@ -104,9 +104,9 @@ body {
 
 .more {
     font-size: .8rem;
+    grid-column: span 2;
     margin-top: .625rem;
     margin-left: auto;
-    grid-column: span 2;
 }
 
 .btn-closed {

@@ -1,11 +1,11 @@
 .admin-area__input {
     border-radius: 0.2rem;
     border: 1px solid rgb(194, 194, 194);
+    color: var(--dark-orange);
+    font-size: .8rem;
     padding-top: 20px;
     padding-left: 0.5rem;
-    font-size: .8rem;
     padding-bottom: 0.325rem;
-    color: var(--dark-orange);
 }
 
 .admin-area__input:focus {
@@ -13,25 +13,25 @@
 }
 
 .admin-area__input::placeholder {
-    visibility: hidden;
     color: #00000000;
+    visibility: hidden;
 }
 
 
-/* ÍCONE DE MOSTRAR A SENHA */ 
+/* SHOW PASSWORD ICON */
 .admin-area__icon > .bi {
+    color: var(--dark);
+    cursor: pointer;
+    font-size: 1.3rem;
+    margin: auto;
     position: absolute;
+    padding: 0.325rem;
     right: 0.5rem;
     top: 0.5rem;
-    margin: auto;
-    color: var(--dark);
-    font-size: 1.3rem;
-    cursor: pointer;
-    padding: 0.325rem;
-    transition: all .325s;
+    transition: var(--transition);
 }
 
 .admin-area__icon > .bi:hover {
     color: var(--dark-orange);
-    transition: all .325s;
+    transition: var(--transition);
 }

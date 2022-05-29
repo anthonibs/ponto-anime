@@ -1,0 +1,11 @@
+.admin-area__aside {
+    border-right: 2px solid #FE3B17;
+    padding-right: 3rem;
+}
+
+.admin-area__bg-image {
+    background: url(/assets/images/rafiki-bg-image-area-admin.svg) no-repeat center;
+    height: 250px;
+    min-width: 170px;
+    width: auto;
+}
