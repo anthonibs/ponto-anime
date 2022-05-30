@@ -16,3 +16,5 @@ CLOSED_MODAL.forEach(btn => {
         OVERLAY_MODAL.style.display = 'none'
     })
 })
+
+

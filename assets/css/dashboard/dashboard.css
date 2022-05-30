@@ -6,3 +6,55 @@
 @import url(login/admin-area__input.css);
 @import url(login/admin-area__label.css);
 @import url(login/admin-area__aside.css);
+
+.dashboard__grid {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr 1fr;
+    grid-template-rows: 70px 1fr 50px;
+}
+
+.dashboard__header{
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    grid-column: span 3;
+}
+
+.dashboard__aside {
+    position: relative;
+    height: 100vh;
+    grid-column: 1;
+    grid-row: 1/4;
+    border: 2px solid red;
+    background-color: cornflowerblue;
+}
+
+.dashboard__main {
+    grid-column: span 3;
+    border: 2px solid rgb(94, 255, 0);
+}
+
+.dashboard__footer {
+    grid-column: span 3;
+    border: 2px solid rebeccapurple;
+}
+
+/* separar por arquivo */
+.menu-icone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellowgreen;
+    cursor: pointer;
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+.aside__menu-admin--hide {
+    display: none;
+}
+
+.dashboard__menu .bi {
+    font-size: 1.5rem;
+}
+

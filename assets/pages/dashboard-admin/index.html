@@ -19,69 +19,98 @@
     <!-- STYLES CSS -->
     <link rel="stylesheet" href="/assets/css/base.css">
     <link rel="stylesheet" href="/assets/css/dashboard/dashboard.css">
-    
-    <title>Área do administrador | Pontoanimes</title>
+
+    <title>Dashboard | Pontoanimes</title>
 
 </head>
 
-<body>
-    <header class="header header--modify">
-        <div class="header__container container">
-            <a href="/index.html"><img class="header__logo" src="/assets/images/logo-ponto-animes-admin-01.svg" alt="Logo Pontoanimes"></a>
-            <span class="header__admin-area">Área do administrador</span>
+<body class="dashboard__grid">
+    <header class="dashboard__header">
+        <div class="menu-icone">
+            <!-- <i class="bi bi-list"></i> -->
+            <!-- <i class="bi bi-grid-3x3-gap-fill"></i> -->
+            <!-- <i class="bi bi-grid-3x3-gap"></i> -->
+            <!-- <i class="bi bi-grid"></i> -->
+            <i class="bi bi-chevron-bar-left"></i>
+            <!-- <i class="bi bi-chevron-bar-right"></i> -->
+            <!-- <i class="bi bi-three-dots-vertical"></i> -->
+            <!-- <i class="bi bi-three-dots"></i> -->
         </div>
     </header>
 
-    <main class="admin-area__login main main--modify">
-        <div class="admin-area__wrap">
-            <aside class="admin-area__aside">
-                <div class="admin-area__bg-image"></div>
-            </aside>
-          
-            <section class="admin-area__container">
-                <header class="admin-area__header">
-                    <h1 class="admin-area__title">Painel de Login</h1>
-                </header>
+    <aside class="dashboard__aside">
+        <img src="/assets/images/logo-ponto-animes-admin-02.svg" alt="Logo Pontoanimes">
+        
+        <nav class="dashboard__nav">
+            <ul class="dashboard__menu">
+                <li class="dashboard__items">
+                    <!-- <i class="bi bi-grid-1x2-fill"></i> -->
+                    <!-- <i class="bi bi-layers-fill"></i> -->
+                    <!-- <i class="bi bi-pie-chart-fill"></i> -->
+                    <!-- <i class="bi bi-ui-checks-grid"></i> -->
+                    <!-- <i class="bi bi-speedometer2"></i> -->
+                    <i class="bi bi-stack"></i>
+                    <!-- <i class="bi bi-speedometer"></i> -->
+                    <!-- <i class="bi bi-grid-fill"></i> -->
+                    <span class="aside__menu-admin">Painel de Controle</span>
+                </li>
+                <li class="dashboard__items">
+                    <i class="bi bi-collection-play-fill"></i>
+                    <!-- <i class="bi bi-film"></i> -->
+                    <!-- <i class="bi bi-collection-play"></i> -->
+                    <!-- <i class="bi bi-view-list"></i> -->
+                    <span class="aside__menu-admin">Lista de Animes</span>
+                </li>
+                <li class="dashboard__items">
+                    <!-- <i class="bi bi-blockquote-right"></i> -->
+                    <!-- <i class="bi bi-file-font"></i> -->
+                    <!-- <i class="bi bi-file-font-fill"></i> -->
+                    <!-- <i class="bi bi-list-nested"></i> -->
+                    <i class="bi bi-textarea-t"></i>
+                    <span class="aside__menu-admin">Blog</span>
+                </li>
+                <li class="dashboard__items">
+                    <i class="bi bi-diagram-3-fill"></i>
+                    <!-- <i class="bi bi-person-lines-fill"></i> -->
+                    <!-- <i class="bi bi-people-fill"></i> -->
+                    <span class="aside__menu-admin">Usuários</span>
+                </li>
+                <li class="dashboard__items">
+                    <!-- <i class="bi bi-info-square-fill"></i> -->
+                    <!-- <i class="bi bi-question-octagon"></i> -->
+                    <!-- <i class="bi bi-question-circle-fill"></i> -->
+                    <!-- <i class="bi bi-info-square"></i> -->
+                    <!-- <i class="bi bi-info-circle-fill"></i> -->
+                    <i class="bi bi-info-lg"></i>
+                    <!-- <i class="bi bi-info-circle"></i> -->
+                    <span class="aside__menu-admin">Informações</span>
+                </li>
+            </ul>
+        </nav>
+    </aside>
 
-                <fieldset class="admin-area__wrapper">
-                    <form action="" method="post" class="admin-area__form">
-                        <fieldset class="admin-area__group">
-                            <input type="text" name="admin_user" id="admin_user" class="admin-area__input" placeholder="Digite seu usuário" required>
-                            <label for="admin_user" class="admin-area__label">Usuário ou email</label>
-                        </fieldset>
-                        <fieldset class="admin-area__group">
-                            <input type="password" name="admin_password" id="admin_password" class="admin-area__input" placeholder="Digite sua senha" required>
-                            <label for="admin_password" class="admin-area__label">Senha</label>
-                            <span class="admin-area__icon">
-                                <i class="bi bi-eye-slash-fill"></i>
-                            </span>
-                        </fieldset>
-
-                        <fieldset class="admin-area__group admin-area__group--modify">
-                            <div class="label-wrapper">
-                                <input type="checkbox" id="remember" name="admin_remember" class="largerCheckbox" checked>
-                                <label for="remember">Lembrar-me</label>
-                            </div>
-                            <button type="submit" class="btn__default btn__access">Acessar</button>
-                        </fieldset>
-                    </form>
-
-                    <fieldset class="admin-area__group">
-                        <a href="#" class="admin-area__forgotit">
-                            <p>Esqueceu sua senha?</p>
-                        </a>
-                    </fieldset>
-                </fieldset>
-            </section>
-        </div>        
+    <main class="dashboard__main">
+        <div class="rea">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur consectetur illum nulla labore ipsum
+            rem corrupti deleniti temporibus error rerum sint, odio voluptatem omnis impedit, aspernatur mollitia quidem
+            adipisci ratione.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis adipisci aliquid quisquam nobis
+            molestias vel sint quas minima tempore iusto unde quod quaerat excepturi voluptas odit labore corporis, non
+            magni!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium dolorum vel, officiis dolor dolore quo
+            quas blanditiis eaque consectetur totam tempora deserunt, natus dolorem doloribus optio autem necessitatibus
+            aut. Ipsum?
+        </div>
     </main>
 
-    <footer class="p-footer__container p-footer__container--modify">
-        <div class="p-footer__copyright">
-            <p>© 2022 Pontoanimes</a></p>
-        </div>
-    </footer>
 
-    <script src="/assets/js/showPassword.js"></script>
+    <footer class="dashboard__footer">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis accusantium sit maiores, delectus fuga illum
+        quae ab esse numquam odio obcaecati, vitae necessitatibus aperiam molestias aspernatur veritatis, quod animi
+        maxime!
+    </footer>
 </body>
+
+<script src="/assets/js/aside-bars.js"></script>
+
 </html>
