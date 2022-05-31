@@ -26,71 +26,65 @@
 
 <body class="dashboard__grid">
     <header class="dashboard__header">
-        <div class="menu-icone">
-            <!-- <i class="bi bi-list"></i> -->
-            <!-- <i class="bi bi-grid-3x3-gap-fill"></i> -->
-            <!-- <i class="bi bi-grid-3x3-gap"></i> -->
-            <!-- <i class="bi bi-grid"></i> -->
+        <div class="btn__menu-aside">
             <i class="bi bi-chevron-bar-left"></i>
-            <!-- <i class="bi bi-chevron-bar-right"></i> -->
-            <!-- <i class="bi bi-three-dots-vertical"></i> -->
-            <!-- <i class="bi bi-three-dots"></i> -->
+        </div>
+
+        <div>
+            Aqui vai meu perfil de login
         </div>
     </header>
 
     <aside class="dashboard__aside">
-        <img src="/assets/images/logo-ponto-animes-admin-02.svg" alt="Logo Pontoanimes">
-        
+        <div class="dashboard__logo">
+            <img class="dashboard__logo-img" src="/assets/images/logo-ponto-animes-admin-01.svg" alt="Logo Pontoanimes">
+        </div>
+
         <nav class="dashboard__nav">
+            <div class="dashboard__research disabled-display">
+                <span class="">
+                    <i class="bi bi-search"></i>
+                </span>
+                <input type="search" class="dashboard__search" placeholder="pesquisa">
+            </div>
+
             <ul class="dashboard__menu">
                 <li class="dashboard__items">
-                    <!-- <i class="bi bi-grid-1x2-fill"></i> -->
-                    <!-- <i class="bi bi-layers-fill"></i> -->
-                    <!-- <i class="bi bi-pie-chart-fill"></i> -->
-                    <!-- <i class="bi bi-ui-checks-grid"></i> -->
-                    <!-- <i class="bi bi-speedometer2"></i> -->
-                    <i class="bi bi-stack"></i>
-                    <!-- <i class="bi bi-speedometer"></i> -->
-                    <!-- <i class="bi bi-grid-fill"></i> -->
-                    <span class="aside__menu-admin">Painel de Controle</span>
+                    <a href="#" class="dashboard__link">
+                        <i class="bi bi-stack"></i>
+                        <span class="aside__menu-admin">Painel de Controle</span>
+                    </a>
                 </li>
                 <li class="dashboard__items">
-                    <i class="bi bi-collection-play-fill"></i>
-                    <!-- <i class="bi bi-film"></i> -->
-                    <!-- <i class="bi bi-collection-play"></i> -->
-                    <!-- <i class="bi bi-view-list"></i> -->
-                    <span class="aside__menu-admin">Lista de Animes</span>
+                    <a href="#" class="dashboard__link">
+                        <i class="bi bi-collection-play-fill"></i>
+                        <span class="aside__menu-admin">Lista de Animes</span>
+                    </a>
                 </li>
                 <li class="dashboard__items">
-                    <!-- <i class="bi bi-blockquote-right"></i> -->
-                    <!-- <i class="bi bi-file-font"></i> -->
-                    <!-- <i class="bi bi-file-font-fill"></i> -->
-                    <!-- <i class="bi bi-list-nested"></i> -->
-                    <i class="bi bi-textarea-t"></i>
-                    <span class="aside__menu-admin">Blog</span>
+                    <a href="#" class="dashboard__link">
+                        <i class="bi bi-textarea-t"></i>
+                        <span class="aside__menu-admin">Blog</span>
+                    </a>
+                </li>
+                <li class="dashboard__items active">
+                    <a href="#" class="dashboard__link">
+                        <i class="bi bi-diagram-3-fill"></i>
+                        <span class="aside__menu-admin">Usuários</span>
+                    </a>
                 </li>
                 <li class="dashboard__items">
-                    <i class="bi bi-diagram-3-fill"></i>
-                    <!-- <i class="bi bi-person-lines-fill"></i> -->
-                    <!-- <i class="bi bi-people-fill"></i> -->
-                    <span class="aside__menu-admin">Usuários</span>
-                </li>
-                <li class="dashboard__items">
-                    <!-- <i class="bi bi-info-square-fill"></i> -->
-                    <!-- <i class="bi bi-question-octagon"></i> -->
-                    <!-- <i class="bi bi-question-circle-fill"></i> -->
-                    <!-- <i class="bi bi-info-square"></i> -->
-                    <!-- <i class="bi bi-info-circle-fill"></i> -->
-                    <i class="bi bi-info-lg"></i>
-                    <!-- <i class="bi bi-info-circle"></i> -->
-                    <span class="aside__menu-admin">Informações</span>
+                    <a href="#" class="dashboard__link">
+                        <i class="bi bi-info-lg"></i>
+                        <span class="aside__menu-admin">Informações</span>
+                    </a>
                 </li>
             </ul>
         </nav>
     </aside>
 
     <main class="dashboard__main">
-        <div class="rea">
+        <div>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur consectetur illum nulla labore ipsum
             rem corrupti deleniti temporibus error rerum sint, odio voluptatem omnis impedit, aspernatur mollitia quidem
             adipisci ratione.
@@ -103,11 +97,19 @@
         </div>
     </main>
 
-
     <footer class="dashboard__footer">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis accusantium sit maiores, delectus fuga illum
-        quae ab esse numquam odio obcaecati, vitae necessitatibus aperiam molestias aspernatur veritatis, quod animi
-        maxime!
+        <fieldset class="dashboard__footer-container">
+            <div class="dashboard__footer-copyrigth">
+                Copyrigth &copy; 2022 - "O céu é muito vasto para a pessoa viver a vida sozinha!"
+            </div>
+
+            <div class="dashboard__footer-version">
+                Teste Pontoanimes | betinha 
+                <a href="#" target="_blank">
+                    <span class="dashboard__version">1.0v</span>
+                </a>
+            </div>
+        </fieldset>
     </footer>
 </body>
 
