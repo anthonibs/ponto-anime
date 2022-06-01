@@ -1,0 +1,25 @@
+.dashboard__link {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    padding: .425rem;
+    color: #595959;
+    transition: all .15s ease-in-out;
+}
+
+.dashboard__items:hover:not(.active),
+.dashboard__link:hover {
+    color: #979797;
+    background-color: #d4d4d4;
+    border-left: 4px solid #a3a3a3;
+    transition: all .15s ease-in-out;
+    box-shadow: 0 1px 3px 0px #aaaaaa9c;
+}
+
+.dashboard__link:hover {
+    border-left: 0px solid #ff000000;
+}
+
+.aside__menu-admin {
+    margin-left: .5rem;
+}

@@ -1,0 +1,47 @@
+.dashboard__configuration {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #595959;
+    gap: 1.2em;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.dashboard__notification > .bi:hover,
+.dashboard__profile:hover, 
+.dashboard__config-icon > .bi:hover {
+    color: var(--dark-orange)
+}
+
+.dashboard__notification {
+    position: relative;
+}
+
+.number-notification {
+    display: flex;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 8px;
+    top: -9px;
+    align-items: center;
+    font-size: .5rem;
+    justify-content: center;
+    border-radius: 10px;
+    color: black;
+    padding: .2rem;
+    font-weight: 700;
+    outline: 3px solid #f2f2f2;
+    background-color: rgb(140, 255, 45);
+}
+
+.dashboard__config-icon {
+    display: flex;
+    gap: .5rem;
+}
+
+.dashboard__config-icon > .bi {
+    padding: .5rem;
+}

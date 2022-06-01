@@ -1,0 +1,12 @@
+.dashboard__logo {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.dashboard__logo-img {
+    display: block;
+    height: 80%;
+    margin: 0 auto;
+    padding: .325rem;
+}

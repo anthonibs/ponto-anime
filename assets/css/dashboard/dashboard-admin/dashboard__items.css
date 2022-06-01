@@ -1,0 +1,21 @@
+.dashboard__items {
+    border-left: 4px solid #bbbbbb;
+}
+
+.dashboard__items:active,
+.dashboard__items.active {
+    border-left: 4px solid var(--dark-orange);
+    background-color: #c7c7c7;
+    box-shadow: 0 1px 3px 0px #aaaaaa;
+    transition: all .15s ease-in-out;
+}
+
+.dashboard__items:active>.dashboard__link,
+.dashboard__items.active>.dashboard__link {
+    color: var(--dark-orange);
+    transition: all .15s ease-in-out;
+}
+
+.dashboard__items:active:not(.active) {
+    border-left: 4px solid var(--dark-orange);
+}

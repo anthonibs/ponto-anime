@@ -1,0 +1,13 @@
+.dashboard__menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    color: #595959;
+}
+
+.dashboard__menu-icon:hover {
+    color: var(--dark-orange);
+}
