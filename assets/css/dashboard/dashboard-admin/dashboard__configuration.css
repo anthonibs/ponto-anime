@@ -1,40 +1,49 @@
 .dashboard__configuration {
-    display: flex;
     align-items: center;
-    font-size: 1rem;
     color: #595959;
-    gap: 1.2em;
-    margin-right: 1.5rem;
     cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    gap: .5rem;
+    margin-right: 1.5rem;
     user-select: none;
 }
 
-.dashboard__notification > .bi:hover,
-.dashboard__profile:hover, 
-.dashboard__config-icon > .bi:hover {
-    color: var(--dark-orange)
+.dashboard__notification, 
+.dashboard__config-icon > .bi {
+    align-items: center;
+    border-radius: .5rem;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    height: 36px;
+    justify-content: center;
+    position: relative; 
+    padding: .6rem;
+    width: 36px;
 }
 
-.dashboard__notification {
-    position: relative;
+.dashboard__notification:hover, 
+.dashboard__config-icon > .bi:hover {
+    background-color: #d4d4d4;
+    transition: var(--transition-2);
 }
 
 .number-notification {
-    display: flex;
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    left: 8px;
-    top: -9px;
     align-items: center;
-    font-size: .5rem;
-    justify-content: center;
     border-radius: 10px;
     color: black;
-    padding: .2rem;
-    font-weight: 700;
-    outline: 3px solid #f2f2f2;
     background-color: rgb(140, 255, 45);
+    display: flex;
+    font-weight: 700;
+    font-size: .5rem;
+    height: 14px;
+    justify-content: center;
+    outline: 3px solid #f2f2f2;
+    position: absolute;
+    padding: .2rem;
+    right: 2px;
+    top: -2px;
+    width: 14px;
 }
 
 .dashboard__config-icon {

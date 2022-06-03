@@ -1,11 +1,11 @@
 .dashboard__menu-icon {
-    display: flex;
-    justify-content: center;
     align-items: center;
     cursor: pointer;
-    margin-left: 1rem;
-    font-size: 1.5rem;
     color: #595959;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    margin-left: 1rem;
 }
 
 .dashboard__menu-icon:hover {

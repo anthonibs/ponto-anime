@@ -1,22 +1,32 @@
 .dashboard__profile {
-    display: flex;
     align-items: center;
-    margin-left: .6rem;
+    border-radius: .5rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: #595959;
+    display: flex;
     gap: .5rem;
+    height: 36px;
+    padding: 0 .5rem;
+    width: 100%;
+}
+
+.dashboard__profile:hover {
+    background-color: #d4d4d4;
+    transition: var(--transition-2);
 }
 
 .dashboard__image {
+    border-radius: 20px;
     display: block;
     height: 30px;
     width: 30px;
-    border-radius: 20px;
 }
 
 .dashboard__nickname {
     display: block;
     font-size: .9rem;
     max-width: 150px;
-    text-overflow: ellipsis;
     overflow: hidden;
+    text-overflow: ellipsis;
     white-space: nowrap;  
 }

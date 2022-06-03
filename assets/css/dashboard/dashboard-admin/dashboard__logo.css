@@ -1,6 +1,6 @@
 .dashboard__logo {
-    display: flex;
     align-items: center;
+    display: flex;
     height: 50px;
 }
 

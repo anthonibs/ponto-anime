@@ -1,15 +1,15 @@
 .dashboard__research {
-    display: flex;
     align-items: center;
-    padding: .325rem;
     background-color: #c7c7c7;
+    display: flex;
+    padding: .325rem;
 }
 
 .dashboard__research .bi-search {
-    font-size: .9rem;
-    padding: .225rem;
     color: #595959;
     cursor: pointer;
+    font-size: .9rem;
+    padding: .225rem;
 }
 
 .dashboard__research .bi-search:hover {
@@ -17,9 +17,9 @@
 }
 
 .dashboard__search {
+    border-radius: .125rem;
+    border: 1px solid #acacac;
+    color: #595959;
     padding: .125rem;
     outline: none;
-    border: 1px solid #acacac;
-    border-radius: .125rem;
-    color: #595959;
 }

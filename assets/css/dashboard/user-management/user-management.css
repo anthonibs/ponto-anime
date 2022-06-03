@@ -1,0 +1,165 @@
+.user-management {
+    padding: .6rem;
+    background-color: #f5f5f5;
+    height: 100%;
+}
+
+.user-management__header {
+    display: flex;
+    align-items: center;
+}
+
+.user-management__header>.user-management__icon {
+    font-size: 1.8rem;
+    color: #505050;
+    margin-right: .5rem;
+}
+
+.user-management__title-2 {
+    font-size: 1.2rem;
+    color: #505050;
+    font-weight: 500;
+}
+
+.user-management__subtitle {
+    font-size: .7rem;
+    color: #757575;
+}
+
+.user-management__container {
+    margin-top: 2rem;
+}
+
+.user-management__add-user {
+    display: flex;
+    margin-left: auto;
+    font-size: .8rem;
+    background-color: #FE3B17;
+    border-radius: .25rem;
+    color: white;
+    align-items: center;
+    gap: .5rem;
+    padding: .3rem 1rem;
+    margin-bottom: .8rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.user-management__add-user:hover {
+    background-color: #e72300;
+    box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, .1);
+}
+
+.user-management__add-user .bi {
+    font-size: 1rem;
+}
+
+.user-management__grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #ffffff;
+    border-radius: .25rem;
+    padding-top: .3rem;
+    padding-bottom: 1rem;
+    border-top: 2px solid #bbbbbb8a;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .1);
+}
+
+.user-management__title-3 {
+    grid-column: 1;
+    margin-left: .5rem;
+    color: #505050;
+}
+
+.user-management__survey {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    grid-column: 3;
+    margin-right: 1rem;
+    height: 30px;
+    border-radius: 0 .3rem .3rem 0;
+    overflow: hidden;
+    border: 1px solid #dfdfdf;
+
+}
+
+
+.user-management__search {
+    padding: .225rem;
+    display: block;
+    width: 150px;
+    height: 100%;
+    font-size: .8rem;
+    border: 0;
+    border-right: 1px solid #dfdfdf;
+    background-color: transparent;
+    outline: none;
+}
+
+.user-management__survey>.user-management__icon {
+    font-size: .9rem;
+    max-height: 100%;
+    width: 35px;
+    padding: .5rem;
+    background-color: #f2f2f2;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.user-management__change {
+    cursor: pointer;
+    border: none;
+    border-radius: .3rem;
+    background-color: #0487D9;
+}
+
+.user-management__change:nth-child(2) {
+    cursor: pointer;
+    background-color: #D9072D;
+}
+
+.user-management__change>.bi {
+    display: block;
+    font-size: 1rem;
+    padding: .5rem .3rem;
+    color: white;
+}
+
+
+
+/*TABELA SEPARAR DEPOIS EM UM ARQUIVO*/
+.user-management__table {
+    grid-column: span 3;
+    margin-top: .3rem;
+}
+
+table th {
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    padding: .6rem;
+    font-weight: bold;
+    font-size: .9rem;
+    color: #313030;
+    text-align: left;
+}
+
+
+
+table td {
+    border-bottom: 1px solid #dfdfdf;
+    text-align: left;
+    padding: .3rem .6rem;
+    color: #595959;
+    font-size: .9rem;
+}
+
+table th:last-child,
+table td:last-child {
+    text-align: center;
+}

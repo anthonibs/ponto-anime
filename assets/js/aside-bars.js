@@ -4,62 +4,56 @@ const changeIcon = document.querySelector('.bi')
 const changeLogo = document.querySelector('.dashboard__logo-img')
 const dashboardSearch = document.querySelector('.dashboard__research')
 const dashboardLink = document.querySelectorAll('.dashboard__link')
-const btnNotificacao = document.querySelector('.dashboard__notification .bi')
+const btnNotification = document.querySelector('.dashboard__notification .bi')
+
+function changeAttr(first, second, variable, type) {
+    variable.getAttribute(type, first)
+    variable.setAttribute(type, second)
+  }
 
 
 for (let i = 0; i < menu.length; i++) {
     btnOpenSide.addEventListener('click', function () {
         menu[i].classList.toggle('disabled-display')
-
-        function changeAttrSrc(first, second) {
-            changeLogo.getAttribute('src', first )
-            changeLogo.setAttribute('src', second)
-        }
-        
-        function changeAttrClass(first, second) {
-            changeIcon.getAttribute('class', first )
-            changeIcon.setAttribute('class', second)
-        }
                 
         if (changeIcon.getAttribute('class') == 'bi bi-chevron-bar-left') {
-            changeAttrClass('bi bi-chevron-bar-left', 'bi bi-chevron-bar-right')
-            changeAttrSrc('/assets/images/logo-ponto-animes-admin-01.svg', '/assets/images/logo-ponto-animes-admin-02.svg')
+          
+            changeAttr('bi bi-chevron-bar-left', 'bi bi-chevron-bar-right', changeIcon, 'class')
+
+            changeAttr('/assets/images/logo-ponto-animes-admin-01.svg','/assets/images/logo-ponto-animes-admin-02.svg', changeLogo, 'src')
 
             dashboardSearch.classList.add('disabled-display')
             dashboardLink[i].classList.toggle('justify__center')
 
         } else if (changeIcon.getAttribute('class') == 'bi bi-chevron-bar-right') {
-            changeAttrClass('bi bi-chevron-bar-right', 'bi bi-chevron-bar-left')
-            changeAttrSrc('/assets/images/logo-ponto-animes-admin-02.svg', '/assets/images/logo-ponto-animes-admin-01.svg')
+        
+            changeAttr('bi bi-chevron-bar-right', 'bi bi-chevron-bar-left', changeIcon, 'class')
+
+            changeAttr('/assets/images/logo-ponto-animes-admin-02.svg','/assets/images/logo-ponto-animes-admin-01.svg', changeLogo, 'src')
 
             dashboardSearch.classList.remove('disabled-display')
             dashboardLink[i].classList.toggle('justify__center')
         }
-
     })
 }
 
 
+// Enable and disable notification
+btnNotification.addEventListener('dblclick', function() {
 
-// Ativar e desativar notificação
-btnNotificacao.addEventListener('dblclick', function() {
+    const notification = document.querySelector('.number-notification')
 
-    const notificacao = document.querySelector('.number-notification')
+    if(btnNotification.getAttribute('class') == 'bi bi-bell-fill') {
 
-    if(btnNotificacao.getAttribute('class') == 'bi bi-bell-fill') {
-        btnNotificacao.getAttribute('class', 'bi bi-bell-fill')
-        btnNotificacao.setAttribute('class', 'bi bi-bell-slash-fill')
+        changeAttr('bi bi-bell-fill', 'bi bi-bell-slash-fill', btnNotification, 'class')
+    
+        notification.style.visibility = 'hidden'
 
-        notificacao.style.visibility = 'hidden'
+    } else if(btnNotification.getAttribute('class') == 'bi bi-bell-slash-fill') {
+        
+        changeAttr('bi bi-bell-slash-fill', 'bi bi-bell-fill', btnNotification, 'class')
 
-    } else if(btnNotificacao.getAttribute('class') == 'bi bi-bell-slash-fill') {
-        btnNotificacao.getAttribute('class', 'bi bi-bell-slash-fill')
-        btnNotificacao.setAttribute('class', 'bi bi-bell-fill')
-
-        notificacao.style.visibility = 'visible'
-
+        notification.style.visibility = 'visible'
 
     }
-    
-
 })

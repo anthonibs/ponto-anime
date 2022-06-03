@@ -1,14 +1,14 @@
 .dashboard__footer-container {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 1.3rem;
-    font-size: .8rem;
-    color: #464646;
-    width: 100%;
-    height: 100%;
-    -webkit-box-shadow: inset 0px 1px 5px -1px rgba(0, 0, 0, .3);
     box-shadow: inset 0px 1px 5px -1px rgba(0, 0, 0, .3);
+    color: #464646;
+    display: flex;
+    font-size: .8rem;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 1.3rem;
+    width: 100%;
+    -webkit-box-shadow: inset 0px 1px 5px -1px rgba(0, 0, 0, .3);
 }
 
 .dashboard__version {

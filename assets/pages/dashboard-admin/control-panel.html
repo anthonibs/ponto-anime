@@ -1,0 +1,116 @@
+<head>
+    <!-- RESET STYLE CSS -->
+    <link rel="stylesheet" href="/assets/css/reset.css">
+
+    <!-- CDN IMPORT LINKS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- STYLES CSS -->
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/dashboard/dashboard.css">
+    <link rel="stylesheet" href="/assets/css/dashboard/user-management/user-management.css">
+
+    <title>Gerenciamento de Usuário</title>
+
+</head>
+
+<body>
+    <section class="user-management">
+        <header class="user-management__header">
+            <span class="user-management__icon"><i class="bi bi-people-fill"></i></span>
+            <h2 class="user-management__title-2">Gerenciamento de Usuário <small
+                    class="user-management__subtitle">Adicionar, Editar, Deletar</small></h2>
+        </header>
+
+        <fieldset class="user-management__container">
+            <button class="user-management__add-user" aria-label="Adicionar Usuário">
+                <span class="user-management__icon">
+                    <i class="bi bi-person-plus-fill"></i>
+                </span>
+                Adicionar
+            </button>
+
+            <div class="user-management__grid">
+                <h3 class="user-management__title-3">Lista de usuários</h3>
+
+                <div class="user-management__survey">
+                    <input type="search" class="user-management__search" placeholder="Pesquisar"
+                        aria-label="Pesquisar usuário" id="userManagerSearch" aria-labelledby="btnUserSearch userTable">
+
+                    <button id="btnUserSearch" class="user-management__icon" aria-label="Botão de pesquisa">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+
+                <table id="userTable" class="user-management__table">
+                    <thead>
+                        <tr>
+                            <th id="tdId">Id</th>
+                            <th id="tdName">Nome</th>
+                            <th id="tdEmail">Email</th>
+                            <th id="tdCell">Celular</th>
+                            <th id="tdAccessLevel">Nível de Acesso</th>
+                            <th id="tdActions">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Administrador</td>
+                            <td>manager@email.com.br</td>
+                            <td>DD 999-999-999</td>
+                            <td>Administrador Master</td>
+                            <td class="td-action" aria-labelledby="userTable">
+                                <button class="user-management__change" aria-label="Alterar dados do usuário"
+                                    aria-labelledby="tdActions">
+                                    <i class="bi bi-pencil-fill"></i>
+                                </button>
+                                <button class="user-management__change" aria-label="Excluir usuário"
+                                    aria-labelledby="tdActions">
+                                    <i class="bi bi-trash3-fill"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Daniela</td>
+                            <td>daniela_daconceicao@moncoes.com.br</td>
+                            <td>DD 999-999-999</td>
+                            <td>Criador de Conteúdo</td>
+                            <td class="td-action" aria-labelledby="userTable">
+                                <button class="user-management__change" aria-label="Alterar dados do usuário"
+                                    aria-labelledby="tdActions">
+                                    <i class="bi bi-pencil-fill"></i>
+                                </button>
+                                <button class="user-management__change" aria-label="Excluir usuário"
+                                    aria-labelledby="tdActions">
+                                    <i class="bi bi-trash3-fill"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Diretor</td>
+                            <td>daianefabianacosta@gmail.com</td>
+                            <td>DD 999-999-999</td>
+                            <td>Suporte</td>
+                            <td class="td-action" aria-labelledby="userTable">
+                                <button class="user-management__change" aria-label="Alterar dados do usuário"
+                                    aria-labelledby="tdActions">
+                                    <i class="bi bi-pencil-fill"></i>
+                                </button>
+                                <button class="user-management__change" aria-label="Excluir usuário"
+                                    aria-labelledby="tdActions">
+                                    <i class="bi bi-trash3-fill"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </fieldset>
+    </section>
+</body>
+
+</html>
