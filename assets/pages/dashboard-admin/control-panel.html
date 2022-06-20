@@ -16,6 +16,55 @@
 </head>
 
 <body>
+    <div class="overlay"></div>
+    <div class="addUser">
+        <div class="overlay-cad"></div>
+        <div class="user-management__addUser-container" id="cadUser">
+            <img src="/assets/images/logo-ponto-animes-admin-01.svg" alt="">
+
+            <button class="user-management__addUser-closed" aria-label="Fechar" closed-Cad-User>
+                <i class="bi bi-x-lg"></i>
+            </button>
+
+            <form action="" class="user-management__addUser-form">
+                <fieldset class="user-management__addUser-fieldset">
+                    <label for="user-name">Nome</label>
+                    <input type="text" name="user-name" id="user-name">
+                </fieldset>
+
+                <fieldset class="user-management__addUser-fieldset">
+                    <label for="user-email">Email</label>
+                    <input type="email" id="user-email" name="user-name">
+                </fieldset>
+
+                <fieldset class="user-management__addUser-fieldset">
+                    <label for="user-tel">Celular</label>
+                    <input type="tel" id="user-tel" name="user-tel">
+                </fieldset>
+
+                <fieldset class="user-management__addUser-fieldset">
+                    <label for="user-pass">Senha</label>
+                    <input type="password" id="user-pass" name="user-pass">
+                </fieldset>
+
+                <fieldset class="user-management__addUser-fieldset">
+                    <label for="user-acess">Nível de Acesso</label>
+                    <select name="user-acess" id="user-acess" aria-label="Caixa de seleção">
+                        <option disabled selected>Selecionar</option>
+                        <option value="Administrado Master">Administrado Master</option>
+                        <option value="Criador de Conteúdo">Criador de Conteúdo</option>
+                        <option value="Suporte">Suporte</option>
+                    </select>
+                </fieldset>
+
+                <div>
+                    <button type="submit" class="btn_user">Cadastrar</button>
+                    <button type="reset" class="btn_user">Redefinir</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <section class="user-management">
         <header class="user-management__header">
             <span class="user-management__icon"><i class="bi bi-people-fill"></i></span>
@@ -24,7 +73,7 @@
         </header>
 
         <fieldset class="user-management__container">
-            <button class="user-management__add-user" aria-label="Adicionar Usuário">
+            <button class="user-management__add-user" aria-label="Adicionar Usuário" add-User>
                 <span class="user-management__icon">
                     <i class="bi bi-person-plus-fill"></i>
                 </span>
@@ -63,11 +112,11 @@
                             <td>Administrador Master</td>
                             <td class="td-action" aria-labelledby="userTable">
                                 <button class="user-management__change" aria-label="Alterar dados do usuário"
-                                    aria-labelledby="tdActions">
+                                    aria-labelledby="tdActions" data-action="change">
                                     <i class="bi bi-pencil-fill"></i>
                                 </button>
                                 <button class="user-management__change" aria-label="Excluir usuário"
-                                    aria-labelledby="tdActions">
+                                    aria-labelledby="tdActions" data-action="delete">
                                     <i class="bi bi-trash3-fill"></i>
                                 </button>
                             </td>
@@ -110,7 +159,11 @@
                 </table>
             </div>
         </fieldset>
+
+
     </section>
+
+    <script src="/assets/js/UserAdmin.js"></script>
 </body>
 
 </html>

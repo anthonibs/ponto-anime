@@ -36,7 +36,7 @@
     font-size: .8rem;
     background-color: #FE3B17;
     border-radius: .25rem;
-    color: white;
+    color: var(--color-sec);
     align-items: center;
     gap: .5rem;
     padding: .3rem 1rem;
@@ -44,11 +44,13 @@
     border: none;
     cursor: pointer;
     outline: none;
+    transition: var(--transition);
 }
 
 .user-management__add-user:hover {
-    background-color: #e72300;
+    background-color: #d12305;
     box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, .1);
+    transition: var(--transition);
 }
 
 .user-management__add-user .bi {
@@ -59,7 +61,7 @@
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: #ffffff;
+    background-color: var(--color-sec);
     border-radius: .25rem;
     padding-top: .3rem;
     padding-bottom: 1rem;
@@ -120,7 +122,6 @@
 }
 
 .user-management__change:nth-child(2) {
-    cursor: pointer;
     background-color: #D9072D;
 }
 
@@ -128,9 +129,29 @@
     display: block;
     font-size: 1rem;
     padding: .5rem .3rem;
-    color: white;
+    color: var(--color-sec);
 }
 
+.user-management__change>.bi:hover {
+    animation: infinite 3s transformeIcon;
+}
+
+@keyframes transformeIcon {
+    0% {
+        transform: scale(105%);
+        color: rgb(233, 233, 233);
+    }
+
+    50% {
+        transform: scale(90%);
+        color: var(--color-sec);
+    }
+
+    100% {
+        transform: scale(108%);
+        color: rgb(228, 228, 228);
+    }
+}
 
 
 /*TABELA SEPARAR DEPOIS EM UM ARQUIVO*/
@@ -162,4 +183,130 @@ table td {
 table th:last-child,
 table td:last-child {
     text-align: center;
+}
+
+
+
+/* OVERLAY */
+.overlay {
+    display: none;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(35, 35, 35, .3);
+}
+
+/* ALTERAR LISTA DE USUÁRIOS */
+
+
+/* ADICIONAR USUÁRIO */
+.addUser {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.addUser .overlay-cad {
+    cursor: pointer;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(35, 35, 35, .3);
+}
+
+
+.user-management__addUser-container {
+    position: relative;
+    width: 100%;
+    max-width: 460px;
+    height: auto;
+    background-color: whitesmoke;
+    border-radius: .3rem;
+}
+
+.user-management__addUser-container img {
+    display: block;
+    height: 70px;
+    width: auto;
+    margin: 2rem auto 1rem;
+    pointer-events: none;
+}
+
+
+/* .user-management__addUser-form {
+    
+} */
+
+.user-management__addUser-fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem 0rem;
+    gap: .3rem;
+}
+
+.user-management__addUser-fieldset label {
+    font-size: 1.2rem;
+    padding-left: .125rem;
+}
+
+.user-management__addUser-fieldset input {
+    padding: .5rem .3rem;
+}
+
+.user-management__addUser-fieldset select {
+    padding: .5rem .3rem;
+}
+
+
+.user-management__addUser-closed {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    padding: .5rem;
+    font-size: 1.3rem;
+    border: 0;
+    background-color: transparent;
+    color: #595959;
+    cursor: pointer;
+    user-select: none;
+    border-radius: .5rem;
+}
+
+.user-management__addUser-closed:hover {
+    background-color: #d4d4d4;
+    transition: var(--transition-2);
+}
+
+.user-management__addUser-form {
+    padding: 1rem 4rem;
+}
+
+.btn_user {
+    margin: 1rem 0;
+    padding: .5rem;
+    cursor: pointer;
+    border-radius: .3rem;
+    margin-right: .3rem;
+    background-color: var(--dark-orange);
+    border: 0;
+    color: var(--color-sec);
+    transition: var(--transition);
+
+}
+
+.btn_user:nth-child(2) {
+    background-color: #cecece;
+}
+
+.btn_user:hover {
+    background-color: #d12305;
+    transition: var(--transition);
+}
+
+.btn_user:nth-child(2):hover {
+    background-color: var(--gray-light);
+    transition: var(--transition);
 }
