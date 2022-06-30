@@ -7,8 +7,19 @@
 @import url(footer__copyright.css);
 
 .p-footer__container {
-    background: var(--gray-light) url(/assets/images/background-footer.svg) no-repeat top / cover ;
     color: #F2F2F2;
     height: auto;
     position: relative;
+}
+
+.p-footer__container::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: var(--gray-light) url(/assets/images/footer-monster.svg) no-repeat top / cover ;
+    z-index: -1;
+    opacity: 80%;
 }

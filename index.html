@@ -12,7 +12,8 @@
     <!-- CDN IMPORT LINKS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 
     <!-- FAVICON LOGO -->
     <link rel="shortcut icon" href="assets/images/logo-ponto-animes-02.svg" type="image/x-icon">
@@ -189,33 +190,24 @@
                 <!-- Início Carrossel -->
                 <div class="main-home__corousel">
                     <div class="main-home__corousel-container">
-                        
-                        <div class="main-home__corousel-slides js-carousel--simple">
+                        <!-- Sliders --> 
+                        <div class="main-home__corousel-slides">
                             <div class="main-home__corousel-slide">
                                 <img src="https://wallpaperaccess.com/full/559481.jpg" class="main-home__image-carousel"
                                     alt="">
                             </div>
 
-                            <div class="main-home__corousel-slides">
+                            <div class="main-home__corousel-slide">
                                 <img src="https://s2.glbimg.com/X0fxW11GX0cBrCTqk7MGqb5nyDU=/1200x/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/8/M/GAE7GISWKHNraHy2OcoA/2016-02-25-sword-art-online-oculus-rift-virtual-reality-1.jpg"
                                     class="main-home__image-carousel" alt="">
                             </div>
 
-                            <div class="main-home__corousel-slides">
+                            <div class="main-home__corousel-slide">
                                 <img src="https://i.postimg.cc/rwbnVmTg/dragonsdogmaanimetrailer-800x400-1.png"
                                     class="main-home__image-carousel" alt="">
                             </div>
                         </div>
-
-                        <button class="js-btn-carousel js-carousel--simple-prev">
-                            <i class="fa-solid fa-angle-left"></i>
-                        </button>
-                        <button class="js-btn-carousel js-carousel--simple-next">
-                            <i class="fa-solid fa-angle-right"></i>
-                        </button>
                     </div>
-
-                    <div class="js-carousel--simple-dots"></div>
                 </div>
                 <!-- Fim Carrossel -->
 
@@ -427,8 +419,13 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
-    <script src="assets/js/glider-carousel.js"></script>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>    
+
+    <script src="assets/js/carouselSlich.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/app.js"></script>
 </body>

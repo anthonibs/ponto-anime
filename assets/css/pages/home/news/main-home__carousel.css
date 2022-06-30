@@ -1,8 +1,12 @@
 .main-home__corousel {
-    grid-column: span 2;
-    height: 100%;
-    max-height: 350px;
     position: relative;
+    grid-column: span 2;
+    height: 350px;
+    position: relative;
+    background: url(/assets/images/sem-imagem-de-fundo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .main-home__corousel-container {
@@ -12,7 +16,7 @@
 }
 
 .main-home__corousel-slides {
-    height: 100%;
+    width: 100%;
 }
 
 .main-home__image-carousel {
@@ -21,65 +25,66 @@
     object-fit: cover;
     object-position: center;
     width: 100%;
+    max-width: 100%;
 }
 
-/* ACTIONS FORWARD AND BACK BUTTONS SLIDER */
-.js-btn-carousel {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    height: 100%;
+
+/* REMOVING DOT SLICK DEFAULT STYLES */
+.slick-dots {
     position: absolute;
-    width: 40px;
-}
-
-.js-carousel--simple-prev {
-    left: 0;
-}
-
-.js-carousel--simple-next {
-    right: 0;
-}
-
-.main-home__corousel-container .fa-solid {
-    color: var(--orange);
-    font-size: 3rem;
-}
-
-.js-carousel--simple-prev .fa-solid:hover,
-.js-carousel--simple-next .fa-solid:hover {
-    color: #cf6610;
-}
-
-/* REMOVING DOT GLIDER DEFAULT STYLES */
-.js-carousel--simple-dots {
-    bottom: 1rem;
-    display: flex;
-    gap: .3rem;
-    left: 50%;
-    position: absolute;
-    transform: translateX(-50%);
-}
-
-.glider-dot {
-    border-radius: 15px;
-    background: #c6c6c6;
-    cursor: pointer;
+    bottom: 12px;
     display: block;
-    height: .7rem;
-    margin: 0;
-    padding: .325rem;
-    transition: .6s;
-    width: .7rem;
+    width: 100%;
 }
 
-.glider-dot:focus,
-.glider-dot:hover {
-    background: #d3d3d3;
+.slick-dots li {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
 }
 
-.glider-dot.active {
-    background: var(--orange);
-    transition: .6s;
-    width: 25px;
+
+.slick-dots li button:before {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    content: '';
+    border-radius: 1rem;
+    background: rgba(158, 158, 158, 0.6);
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    background-color: var(--orange);
+    transition: all .6s;
+    -webkit-transition: all .6s;
+    -moz-transition: all .6s;
+    -ms-transition: all .6s;
+    -o-transition: all .6s;
+    transform: scale(1.6);
+    -webkit-transform: scale(1.6);
+    -moz-transform: scale(1.6);
+    -ms-transform: scale(1.6);
+    -o-transform: scale(1.6);
+}
+
+.slick-dots li button:hover::before {
+    background-color: var(--orange);
+    opacity: 70%;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0px;
+}
+
+.slick-track {
+    height: 350px;
+}
+
+.slick-next:before, .slick-prev:before, .slick-arrow, .slick-arrow::before {
+    display: none;
+    position: absolute;
+    left: -10000px;
 }

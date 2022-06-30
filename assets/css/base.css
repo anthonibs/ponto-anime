@@ -27,6 +27,7 @@ body::-webkit-scrollbar-track {
 
 body {
     font-family: var(--font-f);
+    overflow-x: hidden;
 }
 
 .main {
